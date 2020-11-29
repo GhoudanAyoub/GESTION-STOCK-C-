@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92A5EECA-1836-48C8-A434-6D6A6B729DBF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ELECTOMAR</RootNamespace>
+    <AssemblyName>ELECTOMAR</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\TheShadow\Desktop\setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F8B750BEFCEE57A12088BB00DA33E00066A88094</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ELECTOMAR_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CF.Designer.cs">
+      <DependentUpon>CF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="collection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="collection.Designer.cs">
+      <DependentUpon>collection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDITEMPLOYER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDITEMPLOYER.Designer.cs">
+      <DependentUpon>EDITEMPLOYER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eightbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eightbu.Designer.cs">
+      <DependentUpon>eightbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eighteenbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eighteenbu.Designer.cs">
+      <DependentUpon>eighteenbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="elevenbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="elevenbu.Designer.cs">
+      <DependentUpon>elevenbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fifteenbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fifteenbu.Designer.cs">
+      <DependentUpon>fifteenbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="firstb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firstb.Designer.cs">
+      <DependentUpon>firstb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="firstCustomControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="firstCustomControl1.Designer.cs">
+      <DependentUpon>firstCustomControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fivebu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fivebu.Designer.cs">
+      <DependentUpon>fivebu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fourbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fourbu.Designer.cs">
+      <DependentUpon>fourbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fourteenbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fourteenbu.Designer.cs">
+      <DependentUpon>fourteenbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestiondesemployes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gestiondesemployes.Designer.cs">
+      <DependentUpon>gestiondesemployes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hayoub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hayoub.Designer.cs">
+      <DependentUpon>Hayoub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hcaspin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hcaspin.Designer.cs">
+      <DependentUpon>Hcaspin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="home2.Designer.cs">
+      <DependentUpon>home2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifieremploye.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="modifieremploye.Designer.cs">
+      <DependentUpon>modifieremploye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mySecondCustmControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mySecondCustmControl1.Designer.cs">
+      <DependentUpon>mySecondCustmControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ninebu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ninebu.Designer.cs">
+      <DependentUpon>ninebu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nineteenbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nineteenbu.Designer.cs">
+      <DependentUpon>nineteenbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ourproject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ourproject.Designer.cs">
+      <DependentUpon>ourproject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parteners.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Parteners.Designer.cs">
+      <DependentUpon>Parteners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recherchemploye.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="recherchemploye.Designer.cs">
+      <DependentUpon>recherchemploye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="request.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="request.Designer.cs">
+      <DependentUpon>request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="riad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="riad.Designer.cs">
+      <DependentUpon>riad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="secondbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="secondbu.Designer.cs">
+      <DependentUpon>secondbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sevenbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sevenbu.Designer.cs">
+      <DependentUpon>sevenbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seventeenbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seventeenbu.Designer.cs">
+      <DependentUpon>seventeenbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sevice2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sevice2.Designer.cs">
+      <DependentUpon>sevice2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sixbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sixbu.Designer.cs">
+      <DependentUpon>sixbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sixteenbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sixteenbu.Designer.cs">
+      <DependentUpon>sixteenbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supprimeremploye.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Supprimeremploye.Designer.cs">
+      <DependentUpon>Supprimeremploye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tenbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenbu.Designer.cs">
+      <DependentUpon>tenbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thirteenbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thirteenbu.Designer.cs">
+      <DependentUpon>thirteenbu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TI.Designer.cs">
+      <DependentUpon>TI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TP.Designer.cs">
+      <DependentUpon>TP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="treebu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="treebu.Designer.cs">
+      <DependentUpon>treebu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="twelvebu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="twelvebu.Designer.cs">
+      <DependentUpon>twelvebu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="twentybu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="twentybu.Designer.cs">
+      <DependentUpon>twentybu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="twentyonebu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="twentyonebu.Designer.cs">
+      <DependentUpon>twentyonebu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="twentytwobu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="twentytwobu.Designer.cs">
+      <DependentUpon>twentytwobu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TX.Designer.cs">
+      <DependentUpon>TX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewrequest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewrequest.Designer.cs">
+      <DependentUpon>viewrequest.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CF.resx">
+      <DependentUpon>CF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="collection.resx">
+      <DependentUpon>collection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDITEMPLOYER.resx">
+      <DependentUpon>EDITEMPLOYER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eightbu.resx">
+      <DependentUpon>eightbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eighteenbu.resx">
+      <DependentUpon>eighteenbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="elevenbu.resx">
+      <DependentUpon>elevenbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fifteenbu.resx">
+      <DependentUpon>fifteenbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firstb.resx">
+      <DependentUpon>firstb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firstCustomControl1.resx">
+      <DependentUpon>firstCustomControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fivebu.resx">
+      <DependentUpon>fivebu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.ku-Arab.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fourbu.resx">
+      <DependentUpon>fourbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fourteenbu.resx">
+      <DependentUpon>fourteenbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestiondesemployes.resx">
+      <DependentUpon>gestiondesemployes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hayoub.resx">
+      <DependentUpon>Hayoub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hcaspin.resx">
+      <DependentUpon>Hcaspin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home2.resx">
+      <DependentUpon>home2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifieremploye.resx">
+      <DependentUpon>modifieremploye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mySecondCustmControl1.resx">
+      <DependentUpon>mySecondCustmControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ninebu.resx">
+      <DependentUpon>ninebu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nineteenbu.resx">
+      <DependentUpon>nineteenbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ourproject.resx">
+      <DependentUpon>ourproject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parteners.resx">
+      <DependentUpon>Parteners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="recherchemploye.resx">
+      <DependentUpon>recherchemploye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="request.resx">
+      <DependentUpon>request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="riad.resx">
+      <DependentUpon>riad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="secondbu.resx">
+      <DependentUpon>secondbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sevenbu.resx">
+      <DependentUpon>sevenbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seventeenbu.resx">
+      <DependentUpon>seventeenbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sevice2.resx">
+      <DependentUpon>sevice2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sixbu.resx">
+      <DependentUpon>sixbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sixteenbu.resx">
+      <DependentUpon>sixteenbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supprimeremploye.resx">
+      <DependentUpon>Supprimeremploye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenbu.resx">
+      <DependentUpon>tenbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thirteenbu.resx">
+      <DependentUpon>thirteenbu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TI.resx">
+      <DependentUpon>TI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TP.resx">
+      <DependentUpon>TP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="treebu.resx">
+      <DependentUpon>treebu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="twelvebu.resx">
+      <DependentUpon>twelvebu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="twentybu.resx">
+      <DependentUpon>twentybu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="twentyonebu.resx">
+      <DependentUpon>twentyonebu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="twentytwobu.resx">
+      <DependentUpon>twentytwobu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TX.resx">
+      <DependentUpon>TX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewrequest.resx">
+      <DependentUpon>viewrequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
